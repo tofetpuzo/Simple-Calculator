@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+	   <meta charset="UTF-8"/>
+	   <meta name ='keywords' content = 'Real estate , Construction, Building, flat, house, apartments'/>
+	   <meta name ='description' content = 'Helping people realise their home dreams'/>
+	   <meta http-equiv='cookie' content = 'user_id=7; expires=Sunday 02-Jan-2022 23:59:59 GMT;'/>
+	   <meta name = 'author' content = 'blessings'/>
+	   <meta name ='revised' contents = 'Building'/>
+	   
+	   <title> my first html </title>
+	   <style>
+	   <!-- This is for div*/-- >
+	   .m{
+			border: 5px outset red;
+			background-color: lightgreen;
+			text-align: center;
+			font-family: Comic sans MS;
+			font-size: 20px;
+		}
+		/* This is for id*/
+	    #m{
+			border: 5px outset red;
+			background-color: lightgreen;
+			text-align: center;
+			font-family: Comic sans MS;
+			font-size: 20px;
+		}
+
+        .d{
+          color: darkolivegreen;  
+        }
+	   
+	   </style>
+	</head> 
+	
+	<body > 
+		<!-- form tag --> <!-- multipart/form-data this is used for multi things like videos images -->
+		<form action='process.jsp', method='post' enctype='multipart/form-data'>			
+			<table border = '5'> 
+																			  <!--You can use this  accept='image/*' -->
+				<tr><td valign='top'> Passport  </td> <td><input type ='file' accept='.jpg,.png' name='passport' id='passport' required= 'required'/> </td></tr>
+				<tr><td> <strong class= 'd'> Lastname:  </strong>   </td> <td><input  type = 'text' size = '40' name = 'lname' id='lname' required= 'required'/> <br/> </td></tr>
+				<tr><td>  <strong>Firstname: </strong>   </td> <td><input  type = 'text' size = '40' maxlength='10' name ='fname' id='fname'/> <br/> </td></tr>
+				<tr><td> <strong> Username: </strong>    </td> <td><input  type = 'text'  size = '40' name='uName' id='uname' required= 'required' /> <br/> </td></tr>	
+				<tr><td>  <strong> Password:  </strong>   </td> <td><input  type = 'password' size = '40' /> <br/> </td></tr>
+				<tr><td>  <strong> >DoB:  </strong       </td> <td><input type = 'date'/> <br/> </td></tr>
+				<tr><td> <strong>Gender:  </strong>     </td> <td> Male <input type = 'radio'/ name = 'gender'  value='male' required= 'required'> Female <input name= 'gender' value ='female' checked = 'checked' type = 'radio' required= 'required'/> <br/> </td></tr>
+				<tr><td> <strong>Qualification: </strong> </td> <td> 
+												  <select name = 'qual ' id='qual' multiple> 
+														  <option value='' > </option>
+														  <option value = 'SSCE'> SSCE </option>
+														  <option value = 'Ond'> Ond  </option>
+														  <option value = 'hnd'> Hnd  </option>
+														  <option value = 'bsc'> Bsc</option>
+														  <option value = 'msc'> Msc</option>
+														  <option value = 'phd'> Phd. </option>
+												  </select> 
+
+												</td>
+				
+				
+				</tr>
+			    <tr><td rowspan= '4' valign='top'>   Skills: </td> <td><input type = 'checkbox' name= 'db' id= 'db' value='db'/> Database </td></tr>
+				<tr><td>  <input type = 'checkbox' name= 'prog' id = 'prog' value='prog'/> Programming </td></tr>
+				<tr><td>  <input type = 'checkbox'/ name= 'finance' id = 'finance' value='finance'> Finance </td></tr>
+				<tr><td>  <input type = 'checkbox'/ name = 'devops' id = 'devops' value='devops'> DevOps </td></tr>
+			    <tr><td valign='top'> Personal Statment  </td> <td><textarea row='5' cols= '30'/> </textarea></td></tr>
+				<!-- using input for button -->
+				<tr><td> <input type = 'Submit' value='Submit'/> </td> <td> <input type = 'reset'/></td></tr>
+				<!-- using button -->
+				<tr><td> <button>Sumbit</button> <td> <button>Reset</button></td></tr>
+			</table>
+		 </form>
+    </body>
+</html>
+

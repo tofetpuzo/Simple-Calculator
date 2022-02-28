@@ -1,0 +1,39 @@
+
+        body{
+            background-color: rgb(150, 140, 133);
+        }
+        table{
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            border-radius: 4px;
+        }
+        input{
+            color: saddlebrown;
+            outline: 0;
+            position: relative;
+            left: 2px;
+            top: 2px;
+            border: 0;
+            color: cadetblue;
+            width: 80px;
+            height: 60px;
+            float: left;
+            margin: 2px;
+            font-size: 20px;
+            box-shadow: 2px 2px rgba(0,0.4,0.4);
+        }
+        .span{
+            width: 170px;
+
+        }
+        #res{
+            width: 350px;
+            align-self: auto;
+        }
+        #clears{
+            background-color: rgb(124, 108, 96);
+            display: relative;
+            color: black;
+        }
