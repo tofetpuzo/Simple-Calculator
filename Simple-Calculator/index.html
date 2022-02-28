@@ -1,0 +1,57 @@
+<!doctype>
+<html>
+
+<head>
+    <title>Iya Oloja Calculator...</title>
+    <script type='text/JavaScript'>
+            function Cals(params) {
+                var val1 = document.getElementById('val1').value;
+                var val2 = document.getElementById('val2').value;
+                var oper = document.getElementById('opera').value;
+                var res =  eval(val1+oper+val2);
+                document.getElementById('res').value = res;
+                // alert(val1);  
+                // alert(val2);
+                // console.log(val1);
+                // console.log(val2);            
+            }
+            
+        </script>
+
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td> Value 1: &nbsp;&nbsp;</td>
+                <td> <input type="number" id="val1" required></td>
+            </tr>
+            <tr>
+                <td> Operator &nbsp;&nbsp; </td>
+                <td>
+                    <select required id="opera">
+                        <option value="choose">choose</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </td>
+            <tr>
+                <td> Value 2: &nbsp;&nbsp; </td>
+                <td> <input type="number" id="val2" required></td>
+            </tr>
+            <tr>
+                <td>Result: &nbsp;&nbsp; </td>
+                <td><input type="text" id="res"> </input> </td>
+            </tr>
+            <tr>
+                <td> <input type="reset" value="CLEAR"></td>
+                <td> <input type="button" value="CALCULATE" onclick="return Cals()"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
