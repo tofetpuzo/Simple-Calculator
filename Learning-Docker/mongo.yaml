@@ -21,3 +21,7 @@ services:
     image: 284707391763.dkr.ecr.us-east-2.amazonaws.com/temi-app:1.0
     ports:
      - 3000:3000
+volumes:
+  mongo-data:
+    # this is a physical storage on a local file system for docker to use
+    driver: local
